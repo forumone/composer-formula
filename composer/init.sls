@@ -3,6 +3,8 @@ get-composer:
     - name: 'CURL=`which curl`; $CURL -sS https://getcomposer.org/installer | php'
     - unless: test -f /usr/local/bin/composer
     - cwd: /root/
+    - env:
+      - HOME: /root
 
 install-composer:
   cmd.wait:
