@@ -15,6 +15,11 @@ install-composer:
     - watch:
       - cmd: get-composer
 
+
+composer-patch:
+  pkg.installed:
+    - name: patch
+
 # Get COMPOSER_DEV_WARNING_TIME from the installed composer, and if that time has passed
 # then it's time to run `composer selfupdate`
 #
