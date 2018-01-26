@@ -11,3 +11,6 @@ install-composer:
     - watch:
       - cmd: get-composer
 
+composer-patch:
+  pkg.installed:
+    - name: patch
